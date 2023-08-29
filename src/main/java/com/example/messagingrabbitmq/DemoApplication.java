@@ -30,7 +30,7 @@ public class DemoApplication {
 
 	@Bean
 	Binding binding(Queue queue, TopicExchange exchange){
-		return BindingBuilder.bind(queue).to(exchange).with("foo.var.#");
+		return BindingBuilder.bind(queue).to(exchange).with("foo.bar.#");
 	}
 
 	@Bean
